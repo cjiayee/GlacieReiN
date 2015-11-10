@@ -2,5 +2,5 @@
 
 HTML template for http://GlacieReiN.blogspot.sg/
 
-- considered new to HTML/CSS
+- new to HTML/CSS
 - will work on this again in December
