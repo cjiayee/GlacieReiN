@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<title><$BlogTitle$></title>
+
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+
+		/* SCROLL BAR BEGIN */
+		::-webkit-scrollbar {
+		    width: 15px;
+		}
+		 
+		/* Track */
+		::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		    -webkit-border-radius: 10px;
+		    border-radius: 10px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		    -webkit-border-radius: 10px;
+		    border-radius: 10px;
+		    background: rgba(255,153,255,0.8); 
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+		}
+		::-webkit-scrollbar-thumb:window-inactive {
+			background: rgba(255,102,255,0.4); 
+		}
+		/* SCROLL BAR END */
+
+		body {
+			background:white;
+			position:fixed;
+			font-family:"Shadows Into Light";
+			font-size:20px;
+			padding:10px;
+		}
+
+		h1 {
+			font-family:"Shadows Into Light";
+			font-size:32px;
+			text-decoration:underline;
+			padding:12px;
+		}
+
+		h2 {
+			font-family:"Shadows Into Light";
+			font-size:24px;
+			text-decoration:underline;
+			padding:12px;
+		}
+
+		p {
+			font-family:"Shadows Into Light";
+			font-size:20px;
+			font-weight:bolder;
+			padding: 10px;
+		}
+
+		a {
+			color:rgba(153,51,51,1);;
+		}
+
+		a:hover {
+			color:rgba(204,51,51,1);
+		}
+
+		a:visited {
+			color:rgba(102,51,51,1);
+		}
+
+		.content {
+			border:;
+			border-
+			font-family:"Shadows Into Light";
+			font-size:20px;
+			font-weight:bolder;
+			padding:20px;
+			position:relative;
+		}
+
+		.title {
+			font-family:"Shadows Into Light";
+			font-size:24px;
+			font-weight:bolder;
+			padding:12px;
+		}
+
+		.date {
+			font-family:"Shadows Into Light";
+			font-size:16px;
+			padding:8px;
+		}
+
+		#wallpaper {
+			background:url("http://gallsource.com/wp-content/uploads/2014/08/Guilty-Crown-Nature-Yuzuriha-Inori-Beautiful-HD-Wallpapers-1920x1080-Resolution.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+		    width:100%;
+			height:100%;
+			opacity:;
+		    position:fixed;
+		    top:0;
+		    left:0;
+		}
+
+		.translucent {
+			background-repeat:no-repeat;
+			opacity:0.4;
+			position:fixed;
+		}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="wallpaper"></div>
+		<div style="position:fixed;overflow:auto;left:25;top:25;width:550;height:550;">
+			<div class="translucent" style="width:550;height:550;background:url('http://img25.wallpapercasa.com/uploads/wallpapers/2012/04/21/478054/thumb_big_hd_850cf747fc819b8b4c42f5c8613d6ace.jpg');background-size:cover;border-radius:10px;"></div>
+			<div class="content" id="blog">
+				<div style="padding:16px">
+					<strong>where it all began</strong><br>
+					<i>(these ought to be banished to some database)</i><br>
+					2008 Apr - Blogger: HTML<br>
+					2014 Dec - Codecademy: Python, Ruby<br>
+					2015 Jan - Internship (DSO): Defused a binary bomb<br>
+					2015 Feb - Internship (DSO): Dynamic malware analysis<br>
+					2015 Jul - Workshop: C<br>
+					2015 Aug - NUS: CS1101S, CS1231<br>
+					2015 Sep - Try Ruby: Ruby (will try again)<br>
+					2015 Oct - Workshop: HTML/CSS, JavaScript<br>
+					2015 Oct - Ruby on Rails
+					2015 Nov - WordPress
+				</div>
+
+				<br><br>
+
+				<Blogger>
+					<div class="date"><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader></div>
+
+					<div class="title">
+						<a href="<$BlogItemPermalinkURL$>"><BlogItemTitle><$BlogItemTitle$></BlogItemTitle></a>
+					</div>
+
+					<$BlogItemBody$>
+
+					<BlogItemCommentsEnabled>
+						<a href="<$BlogItemCommentCreate$>" 
+						<$BlogItemCommentFormOnClick$>>
+						<$BlogItemCommentCount$> comments</a>
+					</BlogItemCommentsEnabled>
+
+					<ItemPage>
+						<BlogItemCommentsEnabled>
+
+							<a name="comments"></a>
+							<h4><$BlogItemCommentCount$> Comments:</h4>
+ 
+							<BlogItemComments>
+								<a name="<$BlogCommentNumber$>"></a>
+
+						    	<p class="comment-body"><$BlogCommentBody$></p>
+
+								<p class="comment-data">
+							    	By <$BlogCommentAuthor$>, at
+							        <a href="#<$BlogCommentNumber$>"><$BlogCommentDateTime$></a>
+							        <$BlogCommentDeleteIcon$>
+								</p>
+							</BlogItemComments>
+						<p><a href="<$BlogItemCommentCreate$>" <$BlogItemCommentFormOnClick$>>Post a Comment</a></p>
+						</BlogItemCommentsEnabled>
+					</ItemPage>
+				</Blogger>
+			</div>
+		</div>
+		<!--
+		<div style="background:white;position:fixed;overflow:auto;left:550;top:450;width:300;height:150;">
+			<div class="translucent" style="width:285;height:150;background:url('http://theakiba.com/images/2011/10/1787_inori-footer.jpg');background-size:cover;"></div>
+
+			<div class="introduction" id="profile">
+				<div style="padding:10px">
+					<strong><$BlogTitle$></strong><br>
+					<i>2015/10/10</i><br>
+
+					<h2>About Blog</h2>
+					<$BlogDescription$>
+					<h2>About Me</h2>
+					<$BlogOwnerAboutMe$>
+					<h1>Contact Me</h1>
+					<a href="<$BlogOwnerProfileUrl$>"><$BlogOwnerNickname$></a><br>
+					<$BlogOwnerEmail$><br>
+				</div>
+			</div>
+		</div>
+		-->
+		<!--
+		<div style="position:fixed;overflow:auto;left:50;top:650;">
+			<script type="text/javascript">
+	        nuffnang_bid = "5453f7f74016d143cbae2ebbea4ed771";
+	        document.write( "<div id='nuffnang_lb'></div>" );
+	        (function() {	
+	                var nn = document.createElement('script'); nn.type = 'text/javascript';    
+	                nn.src = 'http://synad3.nuffnang.com.sg/lb.js';    
+	                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
+	        })();
+			</script>
+		</div>
+		-->
+
+		<iframe width="300" height="24" src="https://www.youtube.com/embed/Agnrim_5pio?&autohide=0&amp;autoplay=1" frameborder="0"></iframe>
+
+	</body>
+</html>
