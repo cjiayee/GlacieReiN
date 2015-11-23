@@ -96,7 +96,8 @@
 		}
 
 		#wallpaper {
-			background:url("http://gallsource.com/wp-content/uploads/2014/08/Guilty-Crown-Nature-Yuzuriha-Inori-Beautiful-HD-Wallpapers-1920x1080-Resolution.jpg");
+			/* background:url("http://gallsource.com/wp-content/uploads/2014/08/Guilty-Crown-Nature-Yuzuriha-Inori-Beautiful-HD-Wallpapers-1920x1080-Resolution.jpg"); */
+			background:url("http://tools.dynamicdrive.com/imageoptimizer/data/ux536ez/Guilty-Crown-Nature-Yuzuriha-Inori-Beautiful-HD-Wallpapers-1920x1080-Resolution_0.jpg");
 			background-repeat:no-repeat;
 			background-size:cover;
 		    width:100%;
