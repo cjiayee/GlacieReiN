@@ -122,17 +122,15 @@
 			<div class="translucent" style="width:550;height:550;background:url('http://img25.wallpapercasa.com/uploads/wallpapers/2012/04/21/478054/thumb_big_hd_850cf747fc819b8b4c42f5c8613d6ace.jpg');background-size:cover;border-radius:10px;"></div>
 			<div class="content" id="blog">
 				<div style="padding:16px">
-					<center><strong>where it all began</strong></center><br>
+					<center><strong>where it all began</strong></center>
 					2015 Jan - Internship (DSO): Defused a binary bomb<br>
-					2015 Feb - Python
+					2015 Feb - Python<br>
 					2015 Feb - Internship (DSO): Dynamic malware analysis<br>
 					2015 Aug - NUS: CS1101S, CS1231<br>
 					2015 Dec - GitHub<br>
 					2015 Dec - Ruby on Rails<br>
 					2015 Dec - WordPress<br>
 				</div>
-
-				<br><br>
 
 				<Blogger>
 					<div class="date"><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader></div>
