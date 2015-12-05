@@ -1,30 +1,27 @@
 <html>
 	<head>
 		<title><$BlogTitle$></title>
-
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-
 		<style type="text/css">
 
 		/* SCROLL BAR BEGIN */
-		::-webkit-scrollbar {
-		    width: 15px;
-		}
-		 
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+
 		/* Track */
 		::-webkit-scrollbar-track {
-		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-		    -webkit-border-radius: 10px;
-		    border-radius: 10px;
+		  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		  -webkit-border-radius: 10px;
+		  border-radius: 10px;
 		}
 		 
 		/* Handle */
 		::-webkit-scrollbar-thumb {
-		    -webkit-border-radius: 10px;
-		    border-radius: 10px;
-		    background: rgba(255,153,255,0.8); 
-		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+		  -webkit-border-radius: 10px;
+		  border-radius: 10px;
+		  background: rgba(255,153,255,0.8); 
+		  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 		}
 		::-webkit-scrollbar-thumb:window-inactive {
 			background: rgba(255,102,255,0.4); 
@@ -32,87 +29,90 @@
 		/* SCROLL BAR END */
 
 		body {
-			background:white;
-			position:fixed;
-			font-family:"Shadows Into Light";
-			font-size:20px;
-			padding:10px;
-		}
-
-		h1 {
-			font-family:"Shadows Into Light";
-			font-size:32px;
-			text-decoration:underline;
-			padding:12px;
-		}
-
-		h2 {
-			font-family:"Shadows Into Light";
-			font-size:24px;
-			text-decoration:underline;
-			padding:12px;
-		}
-
-		p {
-			font-family:"Shadows Into Light";
-			font-size:20px;
-			font-weight:bolder;
+			background: white;
+			position: fixed;
+			font-family: "Shadows Into Light";
+			font-size: 20px;
 			padding: 10px;
 		}
 
+		h1 {
+			font-family: "Shadows Into Light";
+			font-size: 32px;
+			text-decoration: underline;
+			padding: ;
+		}
+
+		h2 {
+			font-family: "Shadows Into Light";
+			font-size: 24px;
+			text-decoration: ;
+			padding: ;
+		}
+
+		p {
+			font-family: "Shadows Into Light";
+			font-size: 20px;
+			font-weight: bolder;
+			padding: ;
+		}
+
 		a {
-			color:rgba(153,51,51,1);;
+			color: rgba(153,51,51,1);;
 		}
 
 		a:hover {
-			color:rgba(204,51,51,1);
+			color: rgba(204,51,51,1);
 		}
 
 		a:visited {
-			color:rgba(102,51,51,1);
+			color: rgba(102,51,51,1);
+		}
+
+		ul {
+			margin: 0px;
+			padding: 0px;
 		}
 
 		.content {
-			border:;
-			border-
-			font-family:"Shadows Into Light";
-			font-size:20px;
-			font-weight:bolder;
-			padding:20px;
-			position:relative;
+			border: ;
+			font-family: "Shadows Into Light";
+			font-size: 20px;
+			font-weight: bolder;
+			padding: 20px;
+			position: relative;
 		}
 
 		.title {
-			font-family:"Shadows Into Light";
-			font-size:24px;
-			font-weight:bolder;
-			padding:12px;
+			font-family: "Shadows Into Light";
+			font-size: 24px;
+			font-weight: bolder;
+			padding: 12px;
 		}
 
 		.date {
-			font-family:"Shadows Into Light";
-			font-size:16px;
-			padding:8px;
+			font-family: "Shadows Into Light";
+			font-size: 16px;
+			padding: 8px;
 		}
 
 		#wallpaper {
-			background:url("http://i388.photobucket.com/albums/oo324/MysteriousMiracle/GlacieReiN/inori-yuzuriha-wallpaper-2-min_zpsg5jnp8x1.jpg");
-			background-repeat:no-repeat;
-			background-size:cover;
-		    width:100%;
-			height:100%;
-			opacity:;
-		    position:fixed;
-		    top:0;
-		    left:0;
+			background: url("http://i388.photobucket.com/albums/oo324/MysteriousMiracle/GlacieReiN/inori-yuzuriha-wallpaper-2-min_zpsg5jnp8x1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		  height: 100%;
+			width: 100%;
+			opacity: ;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
 		}
 
 		.translucent {
-			background-repeat:no-repeat;
-			opacity:0.4;
-			position:fixed;
+			background-repeat: no-repeat;
+			opacity: 0.4;
+			position: fixed;
 		}
-
 		</style>
 	</head>
 
@@ -122,14 +122,15 @@
 			<div class="translucent" style="width:550;height:550;background:url('http://img25.wallpapercasa.com/uploads/wallpapers/2012/04/21/478054/thumb_big_hd_850cf747fc819b8b4c42f5c8613d6ace.jpg');background-size:cover;border-radius:10px;"></div>
 			<div class="content" id="blog">
 				<div style="padding:16px">
-					<center><strong>where it all began</strong></center>
-					2015 Jan - Internship (DSO): Defused a binary bomb<br>
-					2015 Feb - Python<br>
-					2015 Feb - Internship (DSO): Dynamic malware analysis<br>
-					2015 Aug - NUS: CS1101S, CS1231<br>
-					2015 Dec - GitHub<br>
-					2015 Dec - Ruby on Rails<br>
-					2015 Dec - WordPress<br>
+				  <center>Proficiency (in descending order and relative)<br>
+				    Python, JavaScript, Ruby, Java, C</center>
+					<h2><strong>Stage Clear</strong></h2>
+					2015<br>
+					<ul style="list-style-type:disc">
+						<li>(Jan) Intern @ DSO: Defused Binary Bomb</li>
+						<li>(Feb to Jun) Intern @ DSO: Dynamic Malware Analysis</li>
+						<li>(NUS Y1S1) CS1101S, CS1231</li>
+					</ul>
 				</div>
 
 				<Blogger>
@@ -156,12 +157,12 @@
 							<BlogItemComments>
 								<a name="<$BlogCommentNumber$>"></a>
 
-						    	<p class="comment-body"><$BlogCommentBody$></p>
+						  	<p class="comment-body"><$BlogCommentBody$></p>
 
 								<p class="comment-data">
-							    	By <$BlogCommentAuthor$>, at
-							        <a href="#<$BlogCommentNumber$>"><$BlogCommentDateTime$></a>
-							        <$BlogCommentDeleteIcon$>
+							  	By <$BlogCommentAuthor$>, at
+							    <a href="#<$BlogCommentNumber$>"><$BlogCommentDateTime$></a>
+							    <$BlogCommentDeleteIcon$>
 								</p>
 							</BlogItemComments>
 						<p><a href="<$BlogItemCommentCreate$>" <$BlogItemCommentFormOnClick$>>Post a Comment</a></p>
@@ -193,19 +194,16 @@
 		<!--
 		<div style="position:fixed;overflow:auto;left:50;top:650;">
 			<script type="text/javascript">
-	        nuffnang_bid = "5453f7f74016d143cbae2ebbea4ed771";
-	        document.write( "<div id='nuffnang_lb'></div>" );
-	        (function() {	
-	                var nn = document.createElement('script'); nn.type = 'text/javascript';    
-	                nn.src = 'http://synad3.nuffnang.com.sg/lb.js';    
-	                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
-	        })();
+	    nuffnang_bid = "5453f7f74016d143cbae2ebbea4ed771";
+	    document.write( "<div id='nuffnang_lb'></div>" );
+	    (function() {	
+	        var nn = document.createElement('script'); nn.type = 'text/javascript';  
+	        nn.src = 'http://synad3.nuffnang.com.sg/lb.js';  
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
+	    })();
 			</script>
 		</div>
 		-->
-
 		<iframe width="300" height="24" src="https://www.youtube.com/embed/ZOJj1EssED0?&autohide=0&amp;autoplay=1" frameborder="0"></iframe>
-
-
 	</body>
 </html>
