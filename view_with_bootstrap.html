@@ -3,17 +3,25 @@
 		<title><$BlogTitle$></title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style type="text/css">   
+    @media (orientation: portrait) {
+      .jumbotron, .content, #PROFILE {
+        width: 150%;
+      }
+    }
     
-		<style type="text/css">
 		body {
-			background: url("http://i388.photobucket.com/albums/oo324/MysteriousMiracle/GlacieReiN/inori-yuzuriha-wallpaper-2-min_zpsg5jnp8x1.jpg");
+      background: url("http://i388.photobucket.com/albums/oo324/MysteriousMiracle/GlacieReiN/inori-yuzuriha-wallpaper-2-min_zpsg5jnp8x1.jpg");
       background-attachment: fixed;
       background-repeat: no-repeat;
-			background-size: 100%;
+			background-size: cover;
 			color: black;
-			font-family: "Shadows Into Light";
+			font-family: "Shadows Into Light Two";
 			font-size: 24px;
+      line-height: 36px;
 		}
     
     /* MAINLY USED FOR TITLES */
@@ -21,6 +29,7 @@
       border-bottom: ;
       font-size: 64px;
       font-weight: bolder;
+      line-height: 80px;
     }
     
     /* MAINLY USED FOR PROFILE */
@@ -28,11 +37,15 @@
       background-color: rgba(153, 102, 204, 0.25);
       font-size: 48px;
       font-weight: bold;
+      line-height: 60px;
       padding: 8px;
       text-align: right;
     }
     h3 {
+      color: indigo;
       font-size: 32px;
+      line-height: 40px;
+      text-align: center;
       text-decoration: underline;
     }
     
@@ -41,14 +54,23 @@
 		}
     
     a {
-			color: rgba(153,51,51,1);;
+			color: purple;
 		}
 		a:hover {
-			color: rgba(204,51,51,1);
+      background-color: rgba(204, 255, 255, 0.25);
+      border: 4px groove powderblue;
+			color: midnightblue;
+      font-size: 1.2em;
+      padding: 4px;
+      text-decoration: none;
 		}
 		a:visited {
-			color: rgba(102,51,51,1);
+			;
 		}
+    
+    strong {
+      color: midnightblue;
+    }
     
     ul {
       list-style: none;
@@ -61,6 +83,8 @@
     /* OVERRIDE BOOTSTRAP'S JUMBOTRON CLASS */
     .jumbotron {
       background-color: rgba(204, 255, 255, 0.25);
+      color: midnightblue;
+      font-family: "Sigmar One";
       padding-left: 10%;
     }
     
@@ -83,6 +107,11 @@
       padding: 8px;
       text-align: center;
 		}
+    
+    .image:hover {
+      background-color: transparent;
+      border: none;
+    }
     
     /* PROFILE */
     #PROFILE {
@@ -139,21 +168,17 @@
 				</section>
 
 				<section id="PROFILE" class="col-sm-4">
-					<h2>Profile</h2>
-						<a href="http://guiltycrown.wikia.com/wiki/Inori_Yuzuriha" target="_blank">
-							<img id="INORI" src="http://theakiba.com/images/2011/10/1787_inori-footer.jpg" height="40%" width="100%" title="Yuzuriha Inori">
-							</img></a><br>
-              
           <h2><$BlogTitle$></h2>
           <h3>2015/10/10</h3>
             
           <h2>About Blog</h2>
           <$BlogDescription$>
-            
+          
           <h2>About Me</h2>
+          <center><img id="INORI" src="http://i388.photobucket.com/albums/oo324/MysteriousMiracle/GlacieReiN/1787_inori-footer_zpso1trdmn6.jpg" height="auto" width="75%" title="Yuzuriha Inori"></img></center>
           <$BlogOwnerAboutMe$>
           <br>
-          <h3><center>Programming Language Proficiency</center></h3>
+          <h3>Programming Language Proficiency</h3>
           (in descending order and relative)<br>
           <ol start="0">
             <li>Python</li>
@@ -164,8 +189,8 @@
             <li>Everything Else</li>
           </ol><br>
             
-          <h2>Stage Clear</h2>
-          <h3>2015</h3>
+          <h3>Stage Clear</h3>
+          <div class="date">2015</div>
           <ul>
             <li>Jan - Internship with DSO: Defuse Binary Bomb</li>
             <li>Feb to Jun - Internship with DSO: Dynamic Malware Analysis</li>
@@ -174,9 +199,13 @@
           <br><br>
             
           <h2>Contact Me</h2>
-          <a href="<$BlogOwnerProfileUrl$>"><$BlogOwnerNickname$></a><br>
-          <$BlogOwnerEmail$><br>
-          <br>
+          <ol list-style-type="none" >
+            <li><a href="<$BlogOwnerProfileUrl$>" target="_blank">Blogger Profile</a></li>
+            <li>E-Mail: <strong>l-jiayee@comp.nus.edu.sg</strong> or <strong><$BlogOwnerEmail$></strong></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100001087143682" target="_blank">Facebook Profile</a></li>
+            <li>GitHub: <a href="https://github.com/jiayeerawr/" target="_blank">jiayeerawr</a></li>
+          </ol><br>
+          
           <h3>Chat Box</h3>
           <!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
           <div id="cboxdiv" style="position: relative; margin: 0 auto; width: 300px; font-size: 0; line-height: 0;">
@@ -187,12 +216,12 @@
           <br><br>
           
 					<h2>Affiliates</h2>
-            <a href="http://glacierein.blogspot.sg/">GlacieReiN</a><br>
-            <a href="http://glacierain.wordpress.com/">WordPress</a><br>
-            <a href="http://sjvj-pwnage.blogspot.sg/">SJVJ</a><br>
-            <a href="http://kangartherapy.blogspot.sg/">Blackiie</a><br>
-            <a href="http://kura-no-seiiki.blogspot.sg/">Cookiie</a><br>
-            <a href="http://sonderlight.blogspot.sg/">Vernessa</a><br>
+            <a href="http://glacierein.blogspot.sg/" target="_blank">GlacieReiN</a><br>
+            <a href="http://glacierain.wordpress.com/" target="_blank">WordPress</a><br>
+            <a href="http://sjvj-pwnage.blogspot.sg/" target="_blank">SJVJ</a><br>
+            <a href="http://kangartherapy.blogspot.sg/" target="_blank">Blackiie</a><br>
+            <a href="http://kura-no-seiiki.blogspot.sg/" target="_blank">Cookiie</a><br>
+            <a href="http://sonderlight.blogspot.sg/" target="_blank">Vernessa</a><br>
           <br><br>
           
           <h2>Archives</h2>
@@ -203,14 +232,14 @@
           
           <h2>Advertisement</h2>
           <!-- nuffnang -->
-           <script type="text/javascript">
-          nuffnang_bid = "5453f7f74016d143cbae2ebbea4ed771";
-          document.write( "<div id='nuffnang_ss'></div>" );
-          (function() {	
-              var nn = document.createElement('script'); nn.type = 'text/javascript';    
-              nn.src = 'http://synad3.nuffnang.com.sg/ss.js';    
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
-          })();
+          <script type="text/javascript">
+                  nuffnang_bid = "5453f7f74016d143cbae2ebbea4ed771";
+                  document.write( "<div id='nuffnang_lr'></div>" );
+                  (function() {	
+                          var nn = document.createElement('script'); nn.type = 'text/javascript';    
+                          nn.src = 'http://synad3.nuffnang.com.sg/lr.js';    
+                          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
+                  })();
           </script>
           <!-- nuffnang-->
           <br><br>
