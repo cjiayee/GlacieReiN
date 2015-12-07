@@ -1,1 +1,223 @@
+<html>
+	<head>
+		<title><$BlogTitle$></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    
+		<style type="text/css">
+		body {
+			background: url("http://i388.photobucket.com/albums/oo324/MysteriousMiracle/GlacieReiN/inori-yuzuriha-wallpaper-2-min_zpsg5jnp8x1.jpg");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+			background-size: 100%;
+			color: black;
+			font-family: "Shadows Into Light";
+			font-size: 24px;
+		}
+    
+    /* MAINLY USED FOR TITLES */
+    h1 {
+      border-bottom: ;
+      font-size: 64px;
+      font-weight: bolder;
+    }
+    
+    /* MAINLY USED FOR PROFILE */
+    h2 {
+      background-color: rgba(153, 102, 204, 0.25);
+      font-size: 48px;
+      font-weight: bold;
+      padding: 8px;
+      text-align: right;
+    }
+    h3 {
+      font-size: 32px;
+      text-decoration: underline;
+    }
+    
+		p {
+			font-style: italic;
+		}
+    
+    a {
+			color: rgba(153,51,51,1);;
+		}
+		a:hover {
+			color: rgba(204,51,51,1);
+		}
+		a:visited {
+			color: rgba(102,51,51,1);
+		}
+    
+    ul {
+      list-style: none;
+      padding-left: 0px;
+    }   
+    ul li:before {
+      content: "**** ";
+    }
+    
+    /* OVERRIDE BOOTSTRAP'S JUMBOTRON CLASS */
+    .jumbotron {
+      background-color: rgba(204, 255, 255, 0.25);
+      padding-left: 10%;
+    }
+    
+    /* BLOG */
+		.content {
+      background-color: rgba(255, 255, 255, 0.5);
+      font-family: "Architects Daughter";
+      padding: 24px;
+		}
+    .date {
+      background-color: rgba(255, 153, 204, 0.25);
+			font-size: 20px;
+      font-weight: bolder;
+      padding: 8px;
+		}
+		.title {
+      background-color: rgba(255, 204, 204, 0.25);
+      font-size: 32px;
+      font-weight: bolder;
+      padding: 8px;
+      text-align: center;
+		}
+    
+    /* PROFILE */
+    #PROFILE {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+    #INORI {
+			border: 8px ridge white;
+		}
+		</style>
+	</head>
 
+	<body>
+		<section class="jumbotron">
+			<section class="container">
+				<h1><$BlogTitle$></h1>
+			</section>
+		</section>
+
+		<section class="container">
+			<section class="row">
+				<section id="BLOG" class="col-sm-8">
+          <div class="content">
+            <!-- BLOGGER BEGIN -->
+            <Blogger>
+            <div class="date"><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader></div>
+            <div class="title">
+              <a href="<$BlogItemPermalinkURL$>"><BlogItemTitle><$BlogItemTitle$></BlogItemTitle></a>
+            </div><br>
+            <$BlogItemBody$>
+            <BlogItemCommentsEnabled>
+              <a href="<$BlogItemCommentCreate$>" 
+              <$BlogItemCommentFormOnClick$>>
+              <$BlogItemCommentCount$> comments</a>
+            </BlogItemCommentsEnabled>
+            <br><br><br><br>
+            <ItemPage>
+              <BlogItemCommentsEnabled>
+                <a name="comments"></a>
+                <h3><$BlogItemCommentCount$> Comments:</h3>
+                <BlogItemComments>
+                  <a name="<$BlogCommentNumber$>"></a>
+                  <p class="comment-body"><$BlogCommentBody$></p>
+                  <p class="comment-data">
+                    Commented by <$BlogCommentAuthor$> on <a href="#<$BlogCommentNumber$>"><$BlogCommentDateTime$></a>
+                    <$BlogCommentDeleteIcon$>
+                  </p>
+                </BlogItemComments>
+              <p><a href="<$BlogItemCommentCreate$>" <$BlogItemCommentFormOnClick$>Post a Comment</a></p>
+              </BlogItemCommentsEnabled>
+            </ItemPage>
+          </Blogger>
+          <!-- BLOGGER END -->
+        </div>
+				</section>
+
+				<section id="PROFILE" class="col-sm-4">
+					<h2>Profile</h2>
+						<a href="http://guiltycrown.wikia.com/wiki/Inori_Yuzuriha" target="_blank">
+							<img id="INORI" src="http://theakiba.com/images/2011/10/1787_inori-footer.jpg" height="40%" width="100%" title="Yuzuriha Inori">
+							</img></a><br>
+              
+          <h2><$BlogTitle$></h2>
+          <h3>2015/10/10</h3>
+            
+          <h2>About Blog</h2>
+          <$BlogDescription$>
+            
+          <h2>About Me</h2>
+          <$BlogOwnerAboutMe$>
+          <br>
+          <h3><center>Programming Language Proficiency</center></h3>
+          (in descending order and relative)<br>
+          <ol start="0">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>Everything Else</li>
+          </ol><br>
+            
+          <h2>Stage Clear</h2>
+          <h3>2015</h3>
+          <ul>
+            <li>Jan - Internship with DSO: Defuse Binary Bomb</li>
+            <li>Feb to Jun - Internship with DSO: Dynamic Malware Analysis</li>
+            <li>Aug to Nov - (NUS AY15/16 SEM1) CS1101S, CS1231</li>
+          </ul>
+          <br><br>
+            
+          <h2>Contact Me</h2>
+          <a href="<$BlogOwnerProfileUrl$>"><$BlogOwnerNickname$></a><br>
+          <$BlogOwnerEmail$><br>
+          <br>
+          <h3>Chat Box</h3>
+          <!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
+          <div id="cboxdiv" style="position: relative; margin: 0 auto; width: 300px; font-size: 0; line-height: 0;">
+          <div style="position: relative; height: 250px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border:#DBE2ED 1px solid;"><iframe src="http://www5.cbox.ws/box/?boxid=13669&boxtag=j14y33&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain5-13669" id="cboxmain5-13669"></iframe></div>
+          <div style="position: relative; height: 100px; overflow: hidden; border:#DBE2ED 1px solid; border-top: 0px;"><iframe src="http://www5.cbox.ws/box/?boxid=13669&boxtag=j14y33&sec=form" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform5-13669" id="cboxform5-13669"></iframe></div>
+          </div>
+          <!-- END CBOX -->
+          <br><br>
+          
+					<h2>Affiliates</h2>
+            <a href="http://glacierein.blogspot.sg/">GlacieReiN</a><br>
+            <a href="http://glacierain.wordpress.com/">WordPress</a><br>
+            <a href="http://sjvj-pwnage.blogspot.sg/">SJVJ</a><br>
+            <a href="http://kangartherapy.blogspot.sg/">Blackiie</a><br>
+            <a href="http://kura-no-seiiki.blogspot.sg/">Cookiie</a><br>
+            <a href="http://sonderlight.blogspot.sg/">Vernessa</a><br>
+          <br><br>
+          
+          <h2>Archives</h2>
+          <BloggerArchives>
+            <a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a><br>
+           </BloggerArchives>
+          <br><br>
+          
+          <h2>Advertisement</h2>
+          <!-- nuffnang -->
+           <script type="text/javascript">
+          nuffnang_bid = "5453f7f74016d143cbae2ebbea4ed771";
+          document.write( "<div id='nuffnang_ss'></div>" );
+          (function() {	
+              var nn = document.createElement('script'); nn.type = 'text/javascript';    
+              nn.src = 'http://synad3.nuffnang.com.sg/ss.js';    
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nn, s.nextSibling);
+          })();
+          </script>
+          <!-- nuffnang-->
+          <br><br>
+          
+					<footer>Copyright &copy; JIAYEERAWR</footer>
+				</section>
+			</section>
+		</section>
+	</body>
+</html>
