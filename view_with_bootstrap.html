@@ -49,7 +49,6 @@
       text-align: center;
       text-decoration: underline;
     }
-    
     p {
       font-style: italic;
     }
@@ -70,12 +69,24 @@
       color: midnightblue;
     }
     
+    footer {
+      text-align: right;
+    }
+    
     ul {
       list-style: none;
       padding-left: 0px;
     }   
     ul li:before {
       content: "**** ";
+    }
+    
+    .CREDITS {
+      list-style: square;
+      padding-left: 2em;
+    }
+    .CREDITS li:before {
+      content: "";
     }
     
     /* OVERRIDE BOOTSTRAP'S JUMBOTRON CLASS */
@@ -145,6 +156,8 @@
               <a href="<$BlogItemPermalinkURL$>"><BlogItemTitle><$BlogItemTitle$></BlogItemTitle></a>
             </div><br>
             <$BlogItemBody$>
+            <br><br><br><br>
+            <!--
             <BlogItemCommentsEnabled>
               <a href="<$BlogItemCommentCreate$>" 
               <$BlogItemCommentFormOnClick$>>
@@ -163,9 +176,10 @@
                     <$BlogCommentDeleteIcon$>
                   </p>
                 </BlogItemComments>
-              <p><a href="<$BlogItemCommentCreate$>" <$BlogItemCommentFormOnClick$>Post a Comment</a></p>
+              <p><a href="<$BlogItemCommentCreate$>" <$BlogItemCommentFormOnClick$>>Post a Comment</a></p>
               </BlogItemCommentsEnabled>
             </ItemPage>
+            -->
             </Blogger>
             <!-- BLOGGER END -->
           </div>
@@ -248,6 +262,15 @@
           <!-- nuffnang-->
           <br><br>
           
+          <h2>Credits</h2>
+            <ul class="CREDITS">
+              <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+              <li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+              <li><a href="http://wallpaperswide.com/members/hotaka/">Hotaka</a></li>
+              <li><a href="http://photobucket.com/">Photobucket</a></li>
+              <li><a href="http://www.w3schools.com/html/html_colornames.asp">w3schools</a></li>
+            </ul>
+            
           <footer>Copyright &copy; JIAYEERAWR</footer>
         </section>
       </section>
@@ -255,6 +278,8 @@
   </body>
   <!-- SCM Music Player http://scmplayer.net -->
   <script type="text/javascript" src="http://scmplayer.net/script.js" 
-  data-config="{'skin':'skins/aquaBlue/skin.css','volume':50,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Watamote OP','url':'https://youtu.be/0PHbR3xf6Vs'},{'title':'Fallen - EGOIST','url':'https://youtu.be/BU8HEzAcKGc'},{'title':'Heaven in the Hell - Nana Mizuki','url':'https://youtu.be/PoOS5f39I2w'},{'title':'Love & Roll - supercell','url':'https://youtu.be/-4O8YI9-nNk'},{'title':'Over The Clouds - alan','url':'https://youtu.be/ZOJj1EssED0'},{'title':'Alibi - SID','url':'https://youtu.be/6kt9TCNDUQE'}]}" ></script>
+  data-config="{'skin': 'skins/aquaBlue/skin.css', 'volume': 50, 'autoplay': true,'shuffle': false,'repeat': 1,'placement': 'top','showplaylist': false,'playlist': [ {'title': 'Watamote OP', 'url':'https://youtu.be/0PHbR3xf6Vs' }, { 'title': 'Clattanoia - Overlord OP', 'url': 'https://youtu.be/NJHpoHD7og0' }, { 'title': 'Dead End - faylan', 'url': 'https://youtu.be/t66VKF-cyhk' }, { 'title': 'Fallen - EGOIST', 'url':'https://youtu.be/BU8HEzAcKGc' }, { 'title': 'Heaven in the Hell - Nana Mizuki', 'url': 'https://youtu.be/PoOS5f39I2w' }, { 'title': 'Kishi Ou no Hokori - Fate/Stay', 'url': 'https://youtu.be/OixZKhcq1fQ' }, { 'title': 'Love & Roll - supercell', 'url': 'https://youtu.be/-4O8YI9-nNk' }, { 'title': 'Over The Clouds - alan', 'url': 'https://youtu.be/ZOJj1EssED0' }, { 'title': 'Alibi - SID', 'url': 'https://youtu.be/6kt9TCNDUQE' } ] }">
+  </script>
+  <!-- { 'title': ' ', 'url': ' ' } -->
   <!-- SCM Music Player script end -->
 </html>
